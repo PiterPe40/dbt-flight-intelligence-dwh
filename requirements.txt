@@ -1,0 +1,35 @@
+# ── Core ──────────────────────────────────────
+requests>=2.31.0
+pandas>=2.1.0
+numpy>=1.24.0
+
+# ── dbt ──────────────────────────────────────
+dbt-core>=1.7.0
+dbt-bigquery>=1.7.0
+dbt-duckdb>=1.7.0
+
+# ── Graph Analysis ───────────────────────────
+networkx>=3.2
+scipy>=1.11.0
+
+# ── BigQuery ─────────────────────────────────
+google-cloud-bigquery>=3.13.0
+google-cloud-bigquery-storage>=2.24.0
+db-dtypes>=1.2.0
+
+# ── DuckDB (local fallback) ─────────────────
+duckdb>=0.9.0
+
+# ── Airflow (included in base image) ────────
+# apache-airflow>=2.8.0
+
+# ── Testing ──────────────────────────────────
+pytest>=7.4.0
+pytest-mock>=3.12.0
+
+# ── Dashboard ────────────────────────────────
+streamlit>=1.31.0
+
+# ── Utilities ────────────────────────────────
+python-dotenv>=1.0.0
+pyarrow>=14.0.0

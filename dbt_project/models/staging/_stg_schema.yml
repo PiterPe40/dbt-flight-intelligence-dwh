@@ -1,0 +1,57 @@
+version: 2
+
+models:
+  - name: stg_opensky__flights
+    description: "Cleaned and renamed flight records from OpenSky API"
+    columns:
+      - name: flight_id
+        description: "Surrogate key (hash of icao24 + firstSeen + departure airport)"
+        tests:
+          - unique
+          - not_null
+      - name: icao24
+        description: "Aircraft ICAO24 hex address (lowercase)"
+        tests:
+          - not_null
+      - name: first_seen_at
+        description: "Departure timestamp"
+        tests:
+          - not_null
+      - name: last_seen_at
+        description: "Arrival timestamp"
+        tests:
+          - not_null
+      - name: origin_airport_id
+        description: "ICAO code of departure airport"
+      - name: destination_airport_id
+        description: "ICAO code of arrival airport"
+      - name: callsign
+        description: "Flight callsign (uppercase, trimmed)"
+
+  - name: stg_opensky__airports
+    description: "Airport metadata from seed file"
+    columns:
+      - name: airport_id
+        description: "ICAO airport code"
+        tests:
+          - unique
+          - not_null
+      - name: latitude
+        tests:
+          - not_null
+      - name: longitude
+        tests:
+          - not_null
+
+  - name: stg_opensky__military_ranges
+    description: "Military ICAO24 hex address ranges by country"
+    columns:
+      - name: range_start
+        tests:
+          - not_null
+      - name: range_end
+        tests:
+          - not_null
+      - name: country_code
+        tests:
+          - not_null

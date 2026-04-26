@@ -1,0 +1,26 @@
+# ── dbt Profile Configuration ────────────────
+# Copy this file to ~/.dbt/profiles.yml or to this directory as profiles.yml
+#
+# Option A: BigQuery (production / cloud)
+# Option B: DuckDB (local development / testing)
+
+flight_intelligence:
+  target: dev  # Change to 'prod' for production
+
+  outputs:
+    # ── BigQuery (cloud) ─────────────────────
+    dev:
+      type: bigquery
+      method: service-account
+      project: "{{ env_var('GCP_PROJECT_ID', 'flight-intelligence-dev') }}"
+      dataset: "{{ env_var('BQ_DATASET', 'flight_intelligence') }}"
+      keyfile: "{{ env_var('GOOGLE_APPLICATION_CREDENTIALS', './credentials/gcp-credentials.json') }}"
+      threads: 4
+      timeout_seconds: 300
+      location: EU  # or US, depending on your preference
+
+    # ── DuckDB (local) ──────────────────────
+    local:
+      type: duckdb
+      path: "{{ env_var('LOCAL_DB_PATH', '../data/flight_intelligence.duckdb') }}"
+      threads: 4

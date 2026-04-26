@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+  - name: opensky
+    description: "Raw flight data from OpenSky Network API, loaded by Airflow DAG"
+    schema: "{{ target.schema }}"
+    tables:
+      - name: raw_flights
+        description: "Raw flight records from /flights/departure and /flights/arrival endpoints"
+        columns:
+          - name: icao24
+            description: "Unique ICAO24 hex address of the aircraft transponder"
+          - name: firstSeen
+            description: "Unix timestamp of first detection (departure)"
+          - name: lastSeen
+            description: "Unix timestamp of last detection (arrival)"
+          - name: estDepartureAirport
+            description: "Estimated ICAO code of departure airport"
+          - name: estArrivalAirport
+            description: "Estimated ICAO code of arrival airport"
+          - name: callsign
+            description: "Callsign of the aircraft (flight number)"
+
+      - name: raw_aircraft_states
+        description: "Real-time aircraft state vectors from /states/all endpoint"
+        columns:
+          - name: icao24
+            description: "ICAO24 hex address"
+          - name: origin_country
+            description: "Country of aircraft registration"

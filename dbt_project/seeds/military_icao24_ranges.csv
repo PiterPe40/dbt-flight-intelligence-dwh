@@ -1,0 +1,24 @@
+range_start,range_end,country_code,country_name,military_branch,notes
+3b0000,3bffff,DE,Germany,Bundeswehr,German Armed Forces
+3c0000,3c0fff,DE,Germany,Bundeswehr,German military supplementary
+448000,44ffff,PL,Poland,Air Force,Polish Armed Forces aviation
+480000,480fff,NL,Netherlands,Royal Air Force,RNLAF
+4b0000,4bffff,CH,Switzerland,Swiss Air Force,Swiss military
+500000,503fff,GB,United Kingdom,Royal Air Force,RAF
+43c000,43cfff,GB,United Kingdom,Royal Air Force,RAF supplementary
+ae0000,aeffff,US,United States,US Air Force,USAF primary range
+adf000,adffff,US,United States,US Air Force,USAF secondary range
+a00000,a0ffff,US,United States,US Army,US Army Aviation
+710000,713fff,FR,France,French Air Force,Armee de l'Air
+381000,383fff,ES,Spain,Spanish Air Force,Ejercito del Aire
+300000,303fff,IT,Italy,Italian Air Force,Aeronautica Militare
+3a0000,3a3fff,BE,Belgium,Belgian Air Force,Belgian Defence
+c00000,c0ffff,CA,Canada,Royal Canadian Air Force,RCAF
+7c0000,7c3fff,AU,Australia,Royal Australian Air Force,RAAF
+780000,783fff,NO,Norway,Royal Norwegian Air Force,RNoAF
+460000,463fff,DK,Denmark,Royal Danish Air Force,RDAF
+4a0000,4a3fff,SE,Sweden,Swedish Air Force,Flygvapnet
+470000,473fff,FI,Finland,Finnish Air Force,Ilmavoimat
+e80000,e83fff,BR,Brazil,Brazilian Air Force,FAB
+c80000,c83fff,IN,India,Indian Air Force,IAF
+780800,780fff,JP,Japan,JASDF,Japan Air Self-Defense Force

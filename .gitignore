@@ -1,0 +1,53 @@
+# ── Python ────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# ── dbt ──────────────────────────────────────
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+dbt_project/profiles.yml
+dbt_project/.user.yml
+
+# ── Data files ───────────────────────────────
+data/*
+!data/.gitkeep
+*.duckdb
+*.duckdb.wal
+.backfill_progress.json
+
+# ── Credentials ──────────────────────────────
+credentials/
+*.json
+!dbt_project/packages.yml
+.env
+
+# ── Airflow ──────────────────────────────────
+logs/
+airflow.db
+airflow.cfg
+webserver_config.py
+
+# ── Docker ───────────────────────────────────
+docker-compose.override.yml
+
+# ── IDE ──────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Notebooks ────────────────────────────────
+notebooks/.ipynb_checkpoints/

@@ -1,0 +1,76 @@
+version: 2
+
+models:
+  - name: mart_flight_performance
+    description: "Route-level performance metrics: duration, distance, frequency"
+    columns:
+      - name: origin_airport_id
+        tests: [not_null]
+      - name: destination_airport_id
+        tests: [not_null]
+      - name: total_flights
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 5
+      - name: avg_duration_min
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 1440
+
+  - name: mart_airport_network
+    description: "Airport-level network metrics: degree, flow, hub classification"
+    columns:
+      - name: airport_id
+        tests: [unique, not_null]
+      - name: total_degree
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+
+  - name: mart_military_activity
+    description: "Daily military activity by country with rolling averages and Z-scores"
+    columns:
+      - name: date_id
+        tests: [not_null]
+      - name: country_code
+        tests: [not_null]
+      - name: military_flight_count
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
+
+  - name: mart_anomaly_flags
+    description: "Days with elevated/high/critical military activity anomalies"
+    columns:
+      - name: anomaly_level
+        tests:
+          - accepted_values:
+              values: ['ELEVATED', 'HIGH', 'CRITICAL']
+
+  - name: mart_military_anomaly_scores
+    description: "Z-score based anomaly detection (Python model) — stratified by day-of-week"
+    columns:
+      - name: date_id
+        tests: [not_null]
+      - name: country_code
+        tests: [not_null]
+      - name: anomaly_level
+        tests:
+          - accepted_values:
+              values: ['NORMAL', 'ELEVATED', 'HIGH', 'CRITICAL']
+
+  - name: mart_pagerank_airports
+    description: "Airport network graph analysis with PageRank and betweenness centrality"
+    columns:
+      - name: airport_id
+        tests: [unique, not_null]
+      - name: hub_rank
+        tests: [unique, not_null]
+      - name: pagerank_score
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 1

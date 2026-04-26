@@ -1,0 +1,56 @@
+airport_id,airport_name,city,country_code,country_name,latitude,longitude,timezone,airport_type
+EPWA,Warsaw Chopin Airport,Warsaw,PL,Poland,52.1657,20.9671,Europe/Warsaw,international
+EPKK,Krakow John Paul II Airport,Krakow,PL,Poland,50.0777,19.7848,Europe/Warsaw,international
+EPGD,Gdansk Lech Walesa Airport,Gdansk,PL,Poland,54.3776,18.4662,Europe/Warsaw,international
+EPWR,Wroclaw Copernicus Airport,Wroclaw,PL,Poland,51.1027,16.8858,Europe/Warsaw,international
+EPKT,Katowice Pyrzowice Airport,Katowice,PL,Poland,50.4743,19.0800,Europe/Warsaw,international
+EPPO,Poznan Lawica Airport,Poznan,PL,Poland,52.4211,16.8263,Europe/Warsaw,international
+EDDF,Frankfurt Airport,Frankfurt,DE,Germany,50.0379,8.5622,Europe/Berlin,international
+EDDM,Munich Airport,Munich,DE,Germany,48.3538,11.7861,Europe/Berlin,international
+EDDB,Berlin Brandenburg Airport,Berlin,DE,Germany,52.3514,13.4939,Europe/Berlin,international
+EDDH,Hamburg Airport,Hamburg,DE,Germany,53.6304,9.9882,Europe/Berlin,international
+EGLL,London Heathrow Airport,London,GB,United Kingdom,51.4700,-0.4543,Europe/London,international
+EGLC,London City Airport,London,GB,United Kingdom,51.5048,0.0555,Europe/London,international
+EGKK,London Gatwick Airport,London,GB,United Kingdom,51.1537,-0.1821,Europe/London,international
+EGSS,London Stansted Airport,London,GB,United Kingdom,51.8850,0.2350,Europe/London,international
+LFPG,Paris Charles de Gaulle,Paris,FR,France,49.0097,2.5479,Europe/Paris,international
+LFPO,Paris Orly Airport,Paris,FR,France,48.7233,2.3794,Europe/Paris,international
+EHAM,Amsterdam Schiphol Airport,Amsterdam,NL,Netherlands,52.3086,4.7639,Europe/Amsterdam,international
+LEMD,Madrid Barajas Airport,Madrid,ES,Spain,40.4936,-3.5668,Europe/Madrid,international
+LEBL,Barcelona El Prat Airport,Barcelona,ES,Spain,41.2971,2.0785,Europe/Madrid,international
+LIRF,Rome Fiumicino Airport,Rome,IT,Italy,41.8003,12.2389,Europe/Rome,international
+LSZH,Zurich Airport,Zurich,CH,Switzerland,47.4647,8.5492,Europe/Zurich,international
+LOWW,Vienna International Airport,Vienna,AT,Austria,48.1103,16.5697,Europe/Vienna,international
+EKCH,Copenhagen Kastrup Airport,Copenhagen,DK,Denmark,55.6180,12.6560,Europe/Copenhagen,international
+ESSA,Stockholm Arlanda Airport,Stockholm,SE,Sweden,59.6519,17.9186,Europe/Stockholm,international
+ENGM,Oslo Gardermoen Airport,Oslo,NO,Norway,60.1976,11.1004,Europe/Oslo,international
+EFHK,Helsinki Vantaa Airport,Helsinki,FI,Finland,60.3172,24.9633,Europe/Helsinki,international
+EBBR,Brussels Airport,Brussels,BE,Belgium,50.9014,4.4844,Europe/Brussels,international
+EIDW,Dublin Airport,Dublin,IE,Ireland,53.4213,-6.2701,Europe/Dublin,international
+LPPT,Lisbon Portela Airport,Lisbon,PT,Portugal,38.7756,-9.1354,Europe/Lisbon,international
+LKPR,Prague Vaclav Havel Airport,Prague,CZ,Czech Republic,50.1008,14.2600,Europe/Prague,international
+LHBP,Budapest Ferenc Liszt Airport,Budapest,HU,Hungary,47.4369,19.2556,Europe/Budapest,international
+LROP,Bucharest Henri Coanda Airport,Bucharest,RO,Romania,44.5711,26.0850,Europe/Bucharest,international
+LWSK,Skopje Alexander Airport,Skopje,MK,North Macedonia,41.9616,21.6214,Europe/Skopje,international
+LTFM,Istanbul Airport,Istanbul,TR,Turkey,41.2753,28.7519,Europe/Istanbul,international
+KJFK,John F. Kennedy International,New York,US,United States,40.6413,-73.7781,America/New_York,international
+KLAX,Los Angeles International,Los Angeles,US,United States,33.9425,-118.4081,America/Los_Angeles,international
+KORD,Chicago O'Hare International,Chicago,US,United States,41.9742,-87.9073,America/Chicago,international
+KATL,Hartsfield-Jackson Atlanta,Atlanta,US,United States,33.6407,-84.4277,America/New_York,international
+KDFW,Dallas/Fort Worth International,Dallas,US,United States,32.8998,-97.0403,America/Chicago,international
+CYYZ,Toronto Pearson International,Toronto,CA,Canada,43.6777,-79.6248,America/Toronto,international
+VHHH,Hong Kong International,Hong Kong,HK,Hong Kong,22.3080,113.9185,Asia/Hong_Kong,international
+RJTT,Tokyo Haneda Airport,Tokyo,JP,Japan,35.5494,139.7798,Asia/Tokyo,international
+ZBAA,Beijing Capital International,Beijing,CN,China,40.0799,116.6031,Asia/Shanghai,international
+YSSY,Sydney Kingsford Smith,Sydney,AU,Australia,33.9461,151.1772,Australia/Sydney,international
+SBGR,Sao Paulo Guarulhos,Sao Paulo,BR,Brazil,-23.4356,-46.4731,America/Sao_Paulo,international
+VIDP,Indira Gandhi International,New Delhi,IN,India,28.5562,77.1000,Asia/Kolkata,international
+OMDB,Dubai International Airport,Dubai,AE,United Arab Emirates,25.2528,55.3644,Asia/Dubai,international
+FAOR,O.R. Tambo International,Johannesburg,ZA,South Africa,-26.1392,28.2460,Africa/Johannesburg,international
+EPMI,Warsaw Modlin Airport,Warsaw,PL,Poland,52.4511,20.6518,Europe/Warsaw,military
+EDDP,Leipzig Halle Airport,Leipzig,DE,Germany,51.4240,12.2364,Europe/Berlin,military
+ETNG,Geilenkirchen NATO Air Base,Geilenkirchen,DE,Germany,50.9608,6.0424,Europe/Berlin,military
+ETAR,Ramstein Air Base,Ramstein,DE,Germany,49.4369,7.6003,Europe/Berlin,military
+EGVN,RAF Brize Norton,Brize Norton,GB,United Kingdom,51.7500,-1.5836,Europe/London,military
+LFRJ,Landivisiau Naval Air Station,Landivisiau,FR,France,48.5303,-4.1517,Europe/Paris,military
+EPSN,Szczecin Goleniow Airport,Szczecin,PL,Poland,53.5847,14.9022,Europe/Warsaw,military
